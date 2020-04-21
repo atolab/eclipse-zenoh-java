@@ -58,8 +58,9 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>github</id>
+      <name>GitHub ATOLAB Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/atolab/eclipse-zenoh-java</url>
     </snapshotRepository>
   </distributionManagement>
 
