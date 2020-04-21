@@ -161,7 +161,7 @@
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${jacoco-maven-plugin-version}</version>
         </plugin>
-        <plugin>
+<!--        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
           <version>${maven-gpg-plugin-version}</version>
@@ -175,7 +175,7 @@
             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
             <autoReleaseAfterClose>true</autoReleaseAfterClose>
           </configuration>
-        </plugin>
+        </plugin>  -->
       </plugins>
     </pluginManagement>
   </build>
@@ -186,7 +186,7 @@
       <build>
         <plugins>
           <!-- GPG signature of files -->
-          <plugin>
+<!--          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <executions>
@@ -198,13 +198,13 @@
                 </goals>
               </execution>
             </executions>
-          </plugin>
+          </plugin> -->
           <!-- Deployment to Maven Central -->
-          <plugin>
+<!--          <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
             <extensions>true</extensions>
-          </plugin>
+          </plugin> -->
         </plugins>
       </build>
     </profile>
