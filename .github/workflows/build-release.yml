@@ -23,7 +23,7 @@ jobs:
       run: mvn -B deploy --file pom.xml -Prelease
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  - name: Gather artifacts
+    - name: Gather artifacts
       run: |
         mkdir -p artifacts/zenoh-java/examples/zenoh artifacts/zenoh-java/examples/zenoh-net
         cp zenoh/target/zenoh-*.jar artifacts/zenoh-java/
